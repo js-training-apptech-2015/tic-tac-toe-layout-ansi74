@@ -1,0 +1,522 @@
+/*------------- base css START-------------------*/
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+.g-clear:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+}
+* html .g-clear {
+    height: 1%;
+}
+:first-child + html .g-clear {
+    min-height: 1px;
+}
+/*! normalize.css v1.1.2 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.23em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.67em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}p,pre{margin:1em 0}code,kbd,pre,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+body {
+    line-height: 1;
+}
+ul {
+    list-style: none outside none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none;
+}
+:focus {
+    outline: 0 none;
+}
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.hide {
+    display: none;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.no-float {
+    float: none;
+}
+.center {
+    margin: 0 auto;
+}
+.clear {
+    clear: both;
+}
+.clear-right {
+    clear: right;
+}
+.clear-left {
+    clear: left;
+}
+.no-wrap {
+    white-space: nowrap;
+}
+.no-border {
+    border: 0 none;
+}
+.no-paddings {
+    padding: 0;
+}
+.no-margins {
+    margin: 0;
+}
+.block {
+    display: block;
+}
+.inline {
+    display: inline;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-justify {
+    text-align: justify;
+}
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.underline {
+    text-decoration: underline;
+}
+.stroke {
+    text-decoration: line-through;
+}
+.small {
+    font-size: x-small;
+}
+.smaller {
+    font-size: xx-small;
+}
+.big {
+    font-size: x-large;
+}
+.bigger {
+    font-size: xx-large;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.sup {
+    vertical-align: super;
+}
+.sub {
+    vertical-align: sub;
+}
+.error {
+    color: #FF0000;
+}
+.img-right {
+    float: right;
+    margin: 0 0 15px 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+
+}
+.img-left {
+    float: left;
+    margin: 0 30px 20px 0;
+    
+}
+.access-keys, .invisible {
+    left: -9999em;
+    position: absolute;
+}
+abbr, acronym {
+    border-bottom: 1px dotted #000000;
+}
+.g-clear:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+}
+* html .g-clear {
+    height: 1%;
+}
+:first-child + html .g-clear {
+    min-height: 1px;
+}
+.clearall {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}
+/*------------- base css END-------------------*/
+.b-container{
+    max-width: 1920px;
+    min-width: 980px;
+}
+header{
+    width: 100%;
+    padding: 5px 0;
+    background: #f1f1f1;
+}
+.wrapper{
+    width: 940px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.btn,.btn:active,.btn:visited,.btn:hover{
+    display: inline-block;
+    margin: 0 10px 0 0;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    color: #fff;
+    background: #4285f4;
+    text-decoration: none;
+    padding: 4px 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.btn:hover{
+    background: #3D71C6;
+    border: 1px solid #3D71C6;
+}
+.btn:hover{
+    background: #3D71C6;
+    border: 1px solid #7495CD;
+}
+.content{
+    width: 940px;
+    padding: 30px 20px;
+    margin: 0 auto; 
+    position: relative;
+}
+.board{
+    margin:0 auto;    
+    font-size: 0;
+    width: 340px;
+    padding: 20px;
+}
+.board__item{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    margin: 5px;
+    position: relative;
+    *display: inline;
+}
+.board__item:hover{
+    background: #f1f1f1;
+    cursor: pointer;
+}
+.board__item.x:before,
+.board__item.zero:before{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  line-height: 100px;
+  text-align: center;
+  font-size: 48px;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+  }
+.board__item.x:before {
+  content: "X";
+}
+.board__item.zero:before  {
+  content: "0";
+}
+.score{
+    text-align: center;
+    margin: 20px 0 0;
+    font-size: 2em;
+}
+/*------------- CORE css  START-------------------*/
+html, body {
+    width: 100%;
+    height: 100%; 
+}
+body {
+    background:#fff;
+    color: #666;
+    font: 75%/1.2  Arial, Helvetica, sans-serif;
+    position: relative;
+    z-index: 0;
+    text-align: left;
+    margin: 0;
+    min-height: 411px;
+}
+.overflow{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+a {
+    font-size: 13px;
+    color:#bd0404;
+    text-decoration: underline; 
+    word-wrap: break-word;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+}
+
+a:active {
+    color: #bd0404;
+}
+a:hover {
+    color: #bd0404;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+}
+a:visited{
+    color:#2956b0;
+}
+
+img {
+    display: block;   
+
+}
+p {
+    font-size: 13px;
+    margin: 0 0 13px;
+    line-height: 21px;
+    text-align: left;
+    color: #454545;
+}
+h1, .h1, h2, .h2, h3, h4, .h4, h5, h6 {
+    color: #333;
+    line-height: normal;
+    margin:0;
+}
+
+h1, .h1 {
+    font-size: 36px;
+    line-height: 37px;
+    text-transform: none;
+    margin: 40px 0 35px 0;
+    color: #333;
+    text-align: left;
+    font-weight: 600;
+    /*    background: rgba(0,0,0,0.1);*/
+}
+
+
+h2, .h2 {
+    font-size: 22px;
+    color: #333;
+    line-height: 30px;
+    margin: 0 0 13px;
+}
+h3, .h3 {
+    font-size: 18px;
+    color: #333;
+    line-height: 25px;
+    margin: 0 0 20px;
+}
